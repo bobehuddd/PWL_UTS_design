@@ -63,13 +63,12 @@ const DHome = () => {
 
     return (
         <>
-        {/* mengirimkan fungsi untuk meng set state showWeather ke komponen header dashboard */}
+            {/* mengirimkan fungsi untuk meng set state showWeather ke komponen header dashboard */}
             <DHeader search={setShowWeather} />
             <div className="container h-screen w-full mt-[-141px] mx-auto">
                 <div className="flex flex-col gap-y-10 justify-center items-center">
                     {/* membuat kondisi jika nilai dari show weather == true makan akan
                     merender komponen di bawah,jika tidak maka tidak ada yang akan dirender */}
-                    
                     {showWeather ? (
                         <>
                             <div className="mt-48">
